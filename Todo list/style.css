@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+/*
+fonts:
+  orig:  font-family: 'Nunito Sans', sans-serif;
+  nunito 300 italic: font-family: 'Nunito', sans-serif;
+*/
+* {
+    margin: 0;
+}
+body {
+    background-color: #fafbfc;
+    
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#askname {
+    text-align: center;
+}
+#nomecamp  {
+    height: 20px;
+}
+#hide {
+    display: none;
+}
+
+
+main {
+    font-family: 'Nunito', sans-serif;
+    padding: 30px 50px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px
+}
+.linespot {
+    display: grid;
+    margin-bottom: 10px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+input:focus {
+    border-color: blueviolet;
+}
+button {
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    outline: 0;
+    font-weight: bold;
+}
+button:hover {
+    background-color: rgb(44, 0, 85);
+    color: white;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+button:active {
+    background-color:rgb(204, 149, 255);
+    color: white;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color: #ccc;
+    width: 100%;
+    text-align: center;
+}
+th {
+    padding: 3px 50px;
+    background-color: rgb(180, 115, 241);
+}
+table td img  {
+      width: 20px;
+}
+.content {
+    margin-top: 15px;
+}
+
+.center {
+    text-align: center;
+    width: 22px;
+    margin-top: 2px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 618px) {
+    table, tr, th, td  {
+        padding: 3px 5px;
+    }
+}

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with objects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/script1.js"></script>
+    <script src="/JS/msg.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <main>
+          <div id="askname">
+                <label for="nomecamp">What´s your name pal?</label>
+                <input type="text" name="" id="nomecamp">
+                <button id="continue" onclick="show()">Continue</button>
+            </div>
+         <div id="hide"> 
+            <div class="title">
+                <h2 id="msg"></h2>
+                <span>What are you gonna do?</span>
+            </div> 
+                <div class="card">
+                <div class="linespot">
+                    <label>Task:</label>
+                    <input type="text" id="Task" placeholder="name of the Task" maxlength="30" minlength="2">
+                </div>
+                <div class="linespot">
+                    <label>time:</label>
+                    <input type="number" id="time" minlength="2"
+                    placeholder="name the hour">
+                </div>
+                <button onclick="Action.save()" id="btnedit">Save</button>
+                <button onclick="Action.cancel()">cancel</button>
+                    </div>
+                <div class="content">
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Task</th>
+                        <th>Time</th>
+                        <th>Actions</th>
+                    </thead>
+                <tbody id="tbody">
+                     
+                </tbody>
+                </table>
+                </div>
+        </div>
+    </main>
+   
+</body>
+</html>

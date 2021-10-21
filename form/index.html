@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Carlosjj-Google-Jfk-Forms.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Register</h1>
+    <div id="form">
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+         <input type="hidden" name="accessKey" value="5c9dc682-ff0d-49af-bc69-52a8b0435af9">
+
+            <label for="firsttextinput">First Name:</label>
+            <input type="text" name="name" id="firsttextinput" required maxlength="10" minlength="2"  placeholder="name">
+            <span></span>
+    
+            <label for="emailinput">Email Adress:</label>
+            <input type="text" name="email" id="emailinput" required maxlength="50" placeholder="email">
+            <span></span>
+            
+            <label for="sendmsg">Menssage:</label>
+            <textarea name="message" id="sendmsg" cols="5" rows="5" required maxlength="125" placeholder="type your message here"></textarea>
+            <span></span>
+
+            <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+ 
+            <button id="sendmsgbutton" onclick="mudafundo()">
+                Send Menssage
+            </button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy;GabrielSS</p>
+    </footer>
+    <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+/*FONTS:
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+*/
+:root {
+   --azul-verde: #00606B;
+   --azuldarker: #20646B;
+
+   --cinza-clarin: #d3d3d3;
+   --azul-claro: #3573F0;
+   --cinza-maisclarin: #E6E6E6;
+   --azul-escuro: #230066;
+   --cinza: #B3B3B3;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+.navbar {
+    padding: 6px;
+    background-color: lightgray;
+}
+.side-nav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    display: block;
+    font-size: 22px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left;
+}
+.side-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.side-nav .close-bottom {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.side-nav .close-bottom:hover {
+    text-decoration: none;
+}
+header {
+    background-color: lightgray;
+   height: 300px;
+   text-align: center;
+   margin: 0px;
+}
+.logoCT {
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 63px;
+}
+main {
+    background-color: white;
+    margin: 20px;
+    margin-top: 0px;
+}
+article {
+    margin: 0px;
+    height: 500px;
+    padding: 2px;
+}
+.fundocolor {
+    background-color: rgba(206, 205, 205, 0.767);
+    height: 340px;
+    padding: 5px;
+    margin: 10px;
+}
+div#slider {
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+     position: relative;
+     min-width: 460px;
+     max-width: 800px;
+}
+#slider img {
+    opacity: 0;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: -1px 1px 2px 1px rgb(46, 46, 46);
+}
+div#slider img.selected {
+    opacity: 1;
+}
+#imgtexto {
+    color: white;
+    position: absolute;
+    font-size: x-large;
+    top: 450px;
+    margin: 64px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#texto2 {
+    color: var(--cinza);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 500px;
+    margin: 61px;
+}
+#textoimg2 {
+    display: none;
+    color: white;
+    position: absolute;
+    font-size: xx-large;
+    top: 455px;
+    margin: 64px;
+    font-family: 'Open Sans', sans-serif;
+}
+#subMortal {
+    display: none;
+    font-weight: bold;
+    color: var(--quasebranco);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 540px;
+    margin: 61px;
+}
+#nitentext {
+    display: none;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    font-size: 28px;
+    top: 513px;
+    margin: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#gamesadd {
+    display: none;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    font-size: 28px;
+    top: 550px;
+    margin: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#gamesadd2 {
+    display: none;
+    color: var(--cinzamaisescuro);
+    font-weight: bold;
+    border: 20px black;
+    position: absolute;
+    font-size: 16px;
+    top: 655px;
+    margin: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gamerimg {
+    margin-right: 60px;
+}
+.imagesright  img {
+    border-radius: 10px;
+    box-shadow: -1px 1px 2px 1px rgb(46, 46, 46);
+    display: block;
+    margin-left: 525px;
+}
+#dupla {
+    display: block;
+   margin-left: 899px;
+   margin-top: 0px;
+}
+@media(max-width: 700px) {
+    .logoCT {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+}
