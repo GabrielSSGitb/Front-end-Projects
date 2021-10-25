@@ -1,4 +1,4 @@
-function show() {
+/*function show() {
   var msg = document.querySelector('h2#msg');
   var nomecamp = document.querySelector('input#nomecamp');
 
@@ -11,4 +11,4 @@ function show() {
   msg.innerHTML= `Welcome ${nomecamp.value}!!! \u{1F601}`
    }
 
-};
+};*/
