@@ -1,3 +1,13 @@
+function getname() {
+    var nomecamp = document.querySelector('input#nomecamp').value;
+    if(nomecamp == '') {
+        alert('Please, type your name to continue!')
+    }else {
+        document.querySelector('#askname').style.display= 'none';
+        document.querySelector('#hide').style.display= 'block';
+        document.querySelector('#msg').innerHTML = `Welcome ${nomecamp} 😁`;
+    }
+};
 class action {
     constructor() {
         this.id = 1;
