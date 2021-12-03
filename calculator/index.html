@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Don´t forget to put a calculator Favicon here, dumpass!-->
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="main.js"></script>
+</head>
+<body onload="carregar()">
+   <div id="calculatorbox">
+        <h3 id="title">Calculator</h3>
+        <input type="text" name="showinc" id="showinc">
+        <input type="text" id="showresult">
+        <div class="firstc"onclick="insert('1')">1</div>
+        <div class="firstc" onclick="insert('2')">2</div>
+         <div class="firstc" onclick="insert('3')">3</div>
+
+        <div class="secondc" onclick="insert('4')">4</div>
+        <div class="secondc" onclick="insert('5')">5</div>
+        <div class="secondc" onclick="insert('6')">6</div>
+        
+
+        <div class="boxes" id="multiply" onclick="insert('x')">x</div>
+        <div class="boxes" id="addup" onclick="insert('+')">+</div>
+        <div class="boxes" id="equal" onclick="calculate()">=</div>
+   </div>
+</body>
+</html>

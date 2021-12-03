@@ -1,0 +1,136 @@
+@charset "utf-8";
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, blue, lightskyblue); 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#calculatorbox  {
+    margin: auto;
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#title {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    font-weight: none;
+}
+#showinc {
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    height: 100px;
+    width: 281px;
+    font-size: xx-large;
+    text-align: right;
+    outline: none;
+    border-color: black;
+}
+#showresult {
+    background-color: black;
+    margin-left: 20px;
+    height: 40px;
+    width: 281px;
+    color: white;
+    text-align: right;
+    font-size: x-large;
+    outline: none;
+    border-color: black;
+}
+.boxes {
+    margin-top: 60px;
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.boxes:hover {
+    background-color: rgb(0, 96, 134);
+}
+.boxes:active {
+    background-color: rgba(255, 255, 255, 0.657);
+    color: black;
+}
+#equal {
+    position: absolute;
+    top: 380px;
+    right: 475px;
+    font-size: x-large;
+    padding: 17px;
+    border-radius: 15px;
+}
+#equal:hover {
+    background-color: rgb(44, 44, 133);
+}
+#equal:active {
+    background-color: rgb(74, 74, 219);
+    color: white;
+}
+#num1 {
+    position: absolute;
+    top: 310px;
+}
+#addup {
+    position: absolute;
+    top: 311px;
+    left: 711px;
+    border-radius: 15px;
+    padding: 17px;
+}
+#num2 {
+    position: absolute;
+    top: 310px;
+    left: 540px;
+}
+#multiply {
+    position: absolute;
+    top: 245px;
+    left: 711px;
+    border-radius: 11px;
+}
+.firstc {
+    margin-right: 20px;
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+.firstc:hover {
+    background-color: rgb(0, 96, 134);
+}
+.firstc:active {
+    background-color: rgba(255, 255, 255, 0.657);
+    color: black;
+}
+.secondc {
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 4px;
+    display: inline-block;
+}
+.secondc:hover {
+    background-color: rgb(0, 96, 134);
+}
+.secondc:active {
+    background-color: rgba(255, 255, 255, 0.657);
+    color: black;
+}
