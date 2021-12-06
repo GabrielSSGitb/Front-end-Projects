@@ -1,6 +1,5 @@
 @charset "utf-8";
 body {
-    height: 100vh;
     background-image: linear-gradient(to bottom, blue, lightskyblue); 
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -9,7 +8,7 @@ body {
     margin: auto;
     background-color: black;
     width: 300px;
-    height: 500px;
+    height: 630px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -61,40 +60,78 @@ body {
 }
 #equal {
     position: absolute;
-    top: 380px;
+    top: 439px;
     right: 475px;
     font-size: x-large;
-    padding: 17px;
+    height: 107px;
+    padding: 20px;
     border-radius: 15px;
+}
+#equal > span {
+    position: absolute;
+    top: 55px;
+    left: 28px;
 }
 #equal:hover {
     background-color: rgb(44, 44, 133);
+    padding: 21px;
 }
 #equal:active {
     background-color: rgb(74, 74, 219);
     color: white;
 }
-#num1 {
+#divide {
+     font-size: x-large;
+     padding: 17px;
+     position: absolute;
+     top: 134px;
+     left: 705px;
+     border-radius: 15px;
+}
+#divide:hover {
+    padding: 18px;
+}
+#subtration {
+    font-size: xx-large;
+    padding: 18px;
     position: absolute;
-    top: 310px;
+    top: 275px;
+    left: 705px;
+    border-radius: 20px;
+}
+#subtration:hover {
+    padding: 19px;
+}
+#subtration > span {
+    position: absolute;
+    top: 12px;
+    left: 26px;
 }
 #addup {
     position: absolute;
-    top: 311px;
-    left: 711px;
+    top: 365px;
+    left: 705px;
     border-radius: 15px;
-    padding: 17px;
+    padding: 19px;
 }
-#num2 {
-    position: absolute;
-    top: 310px;
-    left: 540px;
+#addup:hover {
+    padding: 20px;
 }
 #multiply {
     position: absolute;
-    top: 245px;
-    left: 711px;
-    border-radius: 11px;
+    top: 202px;
+    left: 705px;
+    font-size: large;
+    padding: 18px;
+    border-radius: 18px;
+}
+#multiply:hover {
+    padding: 19px;
+}
+#multiply > span {
+    position: absolute;
+    top: 18px;
+    left: 27px;
 }
 .firstc {
     margin-right: 20px;

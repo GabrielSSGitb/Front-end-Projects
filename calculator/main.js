@@ -17,6 +17,8 @@ function calculate() {
         // Calculating:
         let s = n1 + n2;
         document.querySelector('#showresult').value= s;
+        number.style.color= 'gray';
+        number.style.fontSize= 'large';
     }else if(array[1] == 'x') {
        let n1m = Number(array[0]);
        let n2m = Number(array[2]);
