@@ -22,7 +22,7 @@ body {
     background-color: black;
     color: white;
     margin-left: 20px;
-    height: 100px;
+    height: 56px;
     width: 281px;
     font-size: xx-large;
     text-align: right;
@@ -80,11 +80,17 @@ body {
     background-color: rgb(74, 74, 219);
     color: white;
 }
+#clear {
+    position: absolute;
+    top: 90px;
+    left: 705px;
+    border-radius: 15px;
+}
 #divide {
      font-size: x-large;
      padding: 17px;
      position: absolute;
-     top: 134px;
+     top: 152px;
      left: 705px;
      border-radius: 15px;
 }
@@ -95,7 +101,7 @@ body {
     font-size: xx-large;
     padding: 18px;
     position: absolute;
-    top: 275px;
+    top: 294px;
     left: 705px;
     border-radius: 20px;
 }
@@ -119,7 +125,7 @@ body {
 }
 #multiply {
     position: absolute;
-    top: 202px;
+    top: 224px;
     left: 705px;
     font-size: large;
     padding: 18px;
