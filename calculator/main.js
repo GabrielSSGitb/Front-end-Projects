@@ -1,6 +1,8 @@
 function carregar() {
+    var limpar = document.getElementById('clear');
     document.querySelector('#showinc').focus();
-}
+    limpar.addEventListener('click', cleaninput)
+};
 function insert(num) {
     var number = document.querySelector('#showinc').value;
     document.querySelector('#showinc').value= number + num;
@@ -40,5 +42,11 @@ function calculate() {
         number.style.color= 'rgb(182, 182, 182)';
         number.style.fontSize= 'large';
     }
-    
+};
+function cleaninput() {
+    document.querySelector('#showinc').value='';
+    document.querySelector('#showresult').value='';
+    document.querySelector('#showinc').focus();
+    document.querySelector('#showinc').style.color='white';
+    document.querySelector('#showinc').style.fontSize='xx-large';
 };
