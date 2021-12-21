@@ -58,6 +58,28 @@ body {
     background-color: rgba(255, 255, 255, 0.657);
     color: black;
 }
+.numbers {
+    position: relative;
+    top: 80px;
+    margin-right: 4px;
+    margin-top: 7px;
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
+.numbers:hover {
+    background-color: rgb(0, 96, 134);
+}
+.numbers:active {
+    background-color: rgba(255, 255, 255, 0.657);
+    color: black;
+}
 #equal {
     position: absolute;
     top: 439px;
@@ -83,15 +105,18 @@ body {
 #clear {
     position: absolute;
     top: 90px;
-    left: 705px;
+    left: 475px;
     border-radius: 15px;
+}
+#clear:hover {
+    padding: 18px;
 }
 #divide {
      font-size: x-large;
      padding: 17px;
      position: absolute;
-     top: 152px;
-     left: 705px;
+     top: 90px;
+     left: 542px;
      border-radius: 15px;
 }
 #divide:hover {
@@ -101,7 +126,7 @@ body {
     font-size: xx-large;
     padding: 18px;
     position: absolute;
-    top: 294px;
+    top: 155px;
     left: 705px;
     border-radius: 20px;
 }
@@ -115,7 +140,7 @@ body {
 }
 #addup {
     position: absolute;
-    top: 365px;
+    top: 220px;
     left: 705px;
     border-radius: 15px;
     padding: 19px;
@@ -125,55 +150,30 @@ body {
 }
 #multiply {
     position: absolute;
-    top: 224px;
-    left: 705px;
+    top: 90px;
+    left: 610px;
+    width: 30px;
     font-size: large;
-    padding: 18px;
+    padding-bottom: 18px;
     border-radius: 18px;
 }
 #multiply:hover {
-    padding: 19px;
+    padding: 18px 15px;
 }
 #multiply > span {
     position: absolute;
     top: 18px;
-    left: 27px;
+    left: 25px;
 }
-.firstc {
-    margin-right: 20px;
-    background-color: rgb(88, 88, 88);
-    width: 25px;
-    height: 25px;
-    padding: 15px;
+#doc {
     font-size: large;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px;
-    display: inline-block;
+    font-weight: bolder;
+    padding: 18px;
+    position: absolute;
+    top: 90px;
+    left: 705px;
+    border-radius: 20px;
 }
-.firstc:hover {
-    background-color: rgb(0, 96, 134);
-}
-.firstc:active {
-    background-color: rgba(255, 255, 255, 0.657);
-    color: black;
-}
-.secondc {
-    background-color: rgb(88, 88, 88);
-    width: 25px;
-    height: 25px;
-    padding: 15px;
-    font-size: large;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 10px;
-    margin: 10px 4px;
-    display: inline-block;
-}
-.secondc:hover {
-    background-color: rgb(0, 96, 134);
-}
-.secondc:active {
-    background-color: rgba(255, 255, 255, 0.657);
-    color: black;
+#doc:hover {
+    padding: 20px;
 }
