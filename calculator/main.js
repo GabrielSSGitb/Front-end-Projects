@@ -1,4 +1,5 @@
 function carregar() {
+    document.querySelector('#calculatorbox').style.display='none';
     var limpar = document.getElementById('clear');
     document.querySelector('#showinc').focus();
     limpar.addEventListener('click', cleaninput)
@@ -49,4 +50,8 @@ function cleaninput() {
     document.querySelector('#showinc').focus();
     document.querySelector('#showinc').style.color='white';
     document.querySelector('#showinc').style.fontSize='xx-large';
+};
+function removemsg() {
+   document.querySelector('#msg').style.display='none';
+   document.querySelector('#calculatorbox').style.display='block';
 };
