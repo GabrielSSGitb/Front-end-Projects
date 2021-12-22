@@ -1,14 +1,18 @@
 @charset "utf-8";
 body {
-    background-image: linear-gradient(to bottom, blue, lightskyblue); 
+    background-image: linear-gradient(to bottom, black, blue); 
+    background-position: center center;
+    background-size: 100vh;
+    background-attachment: fixed;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 #calculatorbox  {
     margin: auto;
+    margin-top: 50px;
     background-color: black;
     width: 300px;
-    height: 630px;
+    height: 480px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -61,6 +65,7 @@ body {
 .numbers {
     position: relative;
     top: 80px;
+    left: 20px;
     margin-right: 4px;
     margin-top: 7px;
     background-color: rgb(88, 88, 88);
@@ -81,17 +86,17 @@ body {
     color: black;
 }
 #equal {
-    position: absolute;
-    top: 439px;
-    right: 475px;
+    position: relative;
+    top: -385px;
+    left: 225px;
     font-size: x-large;
-    height: 107px;
+    height: 128px;
     padding: 20px;
     border-radius: 15px;
 }
 #equal > span {
     position: absolute;
-    top: 55px;
+    top: 62px;
     left: 28px;
 }
 #equal:hover {
@@ -104,19 +109,28 @@ body {
 }
 #clear {
     position: absolute;
-    top: 90px;
-    left: 475px;
+    top: 145px;
+    left: 500px;
     border-radius: 15px;
 }
 #clear:hover {
     padding: 18px;
 }
+#clear > span {
+    position: absolute;
+    top: 18px;
+    left: 22px;
+}
+#clear:hover > span {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+}
 #divide {
      font-size: x-large;
-     padding: 17px;
      position: absolute;
-     top: 90px;
-     left: 542px;
+     top: 145px;
+     left: 563px;
      border-radius: 15px;
 }
 #divide:hover {
@@ -126,8 +140,8 @@ body {
     font-size: xx-large;
     padding: 18px;
     position: absolute;
-    top: 155px;
-    left: 705px;
+    top: 145px;
+    left: 707px;
     border-radius: 20px;
 }
 #subtration:hover {
@@ -136,12 +150,12 @@ body {
 #subtration > span {
     position: absolute;
     top: 12px;
-    left: 26px;
+    left: 24px;
 }
 #addup {
-    position: absolute;
-    top: 220px;
-    left: 705px;
+    position: relative;
+    top: -335px;
+    left: 226px;
     border-radius: 15px;
     padding: 19px;
 }
@@ -150,30 +164,45 @@ body {
 }
 #multiply {
     position: absolute;
-    top: 90px;
-    left: 610px;
-    width: 30px;
+    top: 145px;
+    left: 627px;
     font-size: large;
-    padding-bottom: 18px;
-    border-radius: 18px;
+    padding-bottom: 15px;
+    border-radius: 15px;
 }
 #multiply:hover {
-    padding: 18px 15px;
+    padding: 18px;
 }
 #multiply > span {
     position: absolute;
     top: 18px;
+    left: 23px;
+}
+#multiply:hover > span {
+    position: absolute;
+    top: 20px;
     left: 25px;
+}
+#zero {
+    position: relative;
+    top: 90px;
+    left: 20px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+#zero:hover {
+    background-color: rgb(0, 96, 134);
 }
 #doc {
     font-size: large;
     font-weight: bolder;
     padding: 18px;
-    position: absolute;
-    top: 90px;
-    left: 705px;
-    border-radius: 20px;
-}
-#doc:hover {
-    padding: 20px;
+    position: relative;
+    top: -30px;
+    left: 145px;
+    border-radius: 10px;
 }
