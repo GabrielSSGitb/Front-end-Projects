@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+* {
+    margin: 0;
+}
+header {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 40px;
+}
+h1 {
+    font-family: var(--fonte2);
+    font-size: 50px;
+}
+header p {
+    color: gray;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.text {
+    font-family: var(--fonte3);
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 2em;
+    margin-bottom: 50px;
+}
+
+#img1{
+   background-image: url('imagens/background001.jpg');
+   background-position:  right center;
+   background-attachment: fixed;
+   height: 500px;
+}
+#img1 div.text {
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
