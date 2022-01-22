@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="calculator.css">
     <script src="main.js"></script>
 </head>
-<body onload="carregar()">
+<body onload="Calculator.load()">
     <!--<div id="msg">
         <h1>⚠️ Alert!</h1>
         <p> For now this Calculator is not making 2 numbers operation EX: 40/20</p>
@@ -22,26 +22,26 @@
         <h3 id="title">Calculator</h3>
         <input type="text" name="showinc" id="showinc">
         <input type="text" id="showresult">
-        <div class="numbers" onclick="insert('7')">7</div>
-        <div class="numbers" onclick="insert('8')">8</div>
-        <div class="numbers" onclick="insert('9')">9</div> <br>
+        <div class="numbers" onclick="Calculator.insert('7')">7</div>
+        <div class="numbers" onclick="Calculator.insert('8')">8</div>
+        <div class="numbers" onclick="Calculator.insert('9')">9</div> <br>
 
-       <div class="numbers"onclick="insert('4')">4</div>
-       <div class="numbers" onclick="insert('5')">5</div>
-       <div class="numbers" onclick="insert('6')">6</div> <br>
+       <div class="numbers"onclick="Calculator.insert('4')">4</div>
+       <div class="numbers" onclick="Calculator.insert('5')">5</div>
+       <div class="numbers" onclick="Calculator.insert('6')">6</div> <br>
 
-       <div class="numbers" onclick="insert('1')">1</div>
-       <div class="numbers" onclick="insert('2')">2</div>
-       <div class="numbers" onclick="insert('3')">3</div>
-       <div id="zero" onclick="insert('0')">0</div>
+       <div class="numbers" onclick="Calculator.insert('1')">1</div>
+       <div class="numbers" onclick="Calculator.insert('2')">2</div>
+       <div class="numbers" onclick="Calculator.insert('3')">3</div>
+       <div id="zero" onclick="Calculator.insert('0')">0</div>
         
-        <div class="boxes" id="clear"><span>C</span></div> 
-        <div class="boxes" id="divide" onclick="insert('÷')">÷</div>
-        <div class="boxes" id="multiply" onclick="insert('x')"><span>x</span></div>
-        <div class="boxes" id="doc" onclick="insert('.')">.</div>
-        <div class="boxes" id="subtration" onclick="insert('-')"><span>-</span></div>
-        <div class="boxes" id="addup" onclick="insert('+')">+</div>
-        <div class="boxes" id="equal" ><span>=</span></div>
+        <div class="boxes" id="clear" onclick="Calculator.cleaninput()"><span>C</span></div> 
+        <div class="boxes" id="divide" onclick="Calculator.insert('÷')">÷</div>
+        <div class="boxes" id="multiply" onclick="Calculator.insert('x')"><span>x</span></div>
+        <div class="boxes" id="doc" onclick="Calculator.insert('.')">.</div>
+        <div class="boxes" id="subtration" onclick="Calculator.insert('-')"><span>-</span></div>
+        <div class="boxes" id="addup" onclick="Calculator.insert('+')">+</div>
+        <div class="boxes" id="equal" onclick="Calculator.calculate()"><span>=</span></div>
    </div>
 </body>
 </html>
