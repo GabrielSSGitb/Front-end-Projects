@@ -35,14 +35,3 @@ class calculator {
 };
 };
 var Calculator = new calculator;
-/*cleaninput() {
-    document.querySelector('#showinc').value='';
-    document.querySelector('#showresult').value='';
-    document.querySelector('#showinc').focus();
-    document.querySelector('#showinc').style.color='white';
-    document.querySelector('#showinc').style.fontSize='xx-large';
-};*/
-/*function removemsg() {
-   document.querySelector('#msg').style.display='none';
-   document.querySelector('#calculatorbox').style.display='block';
-};*/
