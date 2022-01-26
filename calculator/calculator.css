@@ -66,7 +66,7 @@ body {
     position: relative;
     top: 80px;
     left: 20px;
-    margin-right: 4px;
+    margin: auto;
     margin-top: 7px;
     background-color: rgb(88, 88, 88);
     width: 25px;
@@ -87,10 +87,10 @@ body {
 }
 #equal {
     position: relative;
-    top: -385px;
-    left: 225px;
+    top: -847px;
+    left: 205px;
     font-size: x-large;
-    height: 128px;
+    height: 137px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -108,9 +108,9 @@ body {
     color: white;
 }
 #clear {
-    position: absolute;
-    top: 145px;
-    left: 500px;
+    position: relative;
+    top: -281px;
+    left: 20px;
     border-radius: 15px;
 }
 #clear:hover {
@@ -128,9 +128,9 @@ body {
 }
 #divide {
      font-size: x-large;
-     position: absolute;
-     top: 145px;
-     left: 563px;
+     position: relative;
+     top: -396px;
+     left: 81px;
      border-radius: 15px;
 }
 #divide:hover {
@@ -139,10 +139,10 @@ body {
 #subtration {
     font-size: xx-large;
     padding: 18px;
-    position: absolute;
-    top: 145px;
-    left: 707px;
-    border-radius: 20px;
+    position: relative;
+    top: -746px;
+    left: 205px;
+    border-radius: 15px;
 }
 #subtration:hover {
     padding: 19px;
@@ -153,19 +153,20 @@ body {
     left: 24px;
 }
 #addup {
+    font-size: 20px;
     position: relative;
-    top: -335px;
-    left: 226px;
+    top: -799px;
+    left: 205px;
     border-radius: 15px;
-    padding: 19px;
+    padding: 18px;
 }
 #addup:hover {
     padding: 20px;
 }
 #multiply {
-    position: absolute;
-    top: 145px;
-    left: 627px;
+    position: relative;
+    top: -512px;
+    left: 141px;
     font-size: large;
     padding-bottom: 15px;
     border-radius: 15px;
@@ -200,11 +201,13 @@ body {
 #doc {
     font-size: large;
     font-weight: bolder;
-    padding: 18px;
+    padding: 15px;
     position: relative;
-    top: -30px;
+    top: -374px;
     left: 145px;
-    border-radius: 10px;
+    height: 27px;
+    width: 24px;
+    border-radius: 13px;
 }
 #msg {
     background-color: black;
