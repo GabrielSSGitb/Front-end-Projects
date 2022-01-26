@@ -113,9 +113,6 @@ body {
     left: 20px;
     border-radius: 15px;
 }
-#clear:hover {
-    padding: 18px;
-}
 #clear > span {
     position: absolute;
     top: 18px;
@@ -133,9 +130,6 @@ body {
      left: 81px;
      border-radius: 15px;
 }
-#divide:hover {
-    padding: 18px;
-}
 #subtration {
     font-size: xx-large;
     padding: 18px;
@@ -143,9 +137,6 @@ body {
     top: -746px;
     left: 205px;
     border-radius: 15px;
-}
-#subtration:hover {
-    padding: 19px;
 }
 #subtration > span {
     position: absolute;
@@ -160,9 +151,6 @@ body {
     border-radius: 15px;
     padding: 18px;
 }
-#addup:hover {
-    padding: 20px;
-}
 #multiply {
     position: relative;
     top: -512px;
@@ -170,9 +158,6 @@ body {
     font-size: large;
     padding-bottom: 15px;
     border-radius: 15px;
-}
-#multiply:hover {
-    padding: 18px;
 }
 #multiply > span {
     position: absolute;
