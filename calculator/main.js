@@ -8,24 +8,82 @@ class calculator {
    };
    calculate() {
      let nums = document.querySelector('#showinc').value;
+     let newvalue = [nums]; 
      let array = nums.split("");
-     let values = array.findIndex((item) => {
-        if(item == "+") {
-           return this.addup(array)
-        }else if(item == "-") {
-           return this.subtraction(array)
-        }else {
-           return false
-        }
+     let todo = [];
+     todo = array.findIndex((item) => {
+          if(item == "+") {
+             return this.addup(newvalue)
+          }else if(item == "-") {
+             return this.subtraction(newvalue)
+          }else if(item == "x") {
+             return this.multiply(newvalue)
+          }else if(item == "÷") {
+             return this.divide(newvalue);
+          }else {
+             return false
+          }
      })
-     console.log(array);
    };
-   addup(array) {
-     console.log('+')
+   addup(newvalue) {
+      let backtostring = newvalue.toString();
+      let removetask = backtostring.split("+");
+      let finalvalues = [];
+      finalvalues = removetask.map((item) => Number(item));
+      let n1 = finalvalues[0];
+      let n2 = finalvalues[1];
+      let s = n1 + n2;
+      if(s == parseFloat) {
+         s.toFixed(2)
+      }
+      document.querySelector('#showresult').value = s;
+      document.querySelector('#showinc').style.fontSize= 'large';
+      document.querySelector('#showinc').style.color= 'gray';
    };
-   subtraction(array) {
-      console.log('-')
-   }
+   subtraction(newvalue) {
+      let backtostring = newvalue.toString();
+      let removetask = backtostring.split("-");
+      let finalvalues = removetask.map((item) => Number(item));
+      let n1 = finalvalues[0];
+      let n2 = finalvalues[1];
+      let s = n1 - n2;
+      if(s == parseFloat) {
+         s.toFixed(2);
+      }
+      document.querySelector('#showresult').value = s;
+      document.querySelector('#showinc').style.fontSize= 'large';
+      document.querySelector('#showinc').style.color= 'gray';
+   };
+   multiply(newvalue) {
+      let backtostring = newvalue.toString();
+      let removetask = backtostring.split("x")
+      let finalvalues = [];
+      finalvalues = removetask.map((item) => Number(item))
+      let n1 = finalvalues[0];
+      let n2 = finalvalues[1];
+      let s = n1 * n2;
+      if(s == parseFloat) {
+         s.toFixed(2);
+      }
+      document.querySelector('#showresult').value = s;
+      document.querySelector('#showinc').style.fontSize= 'large';
+      document.querySelector('#showinc').style.color= 'gray';
+   };
+   divide(newvalue) {
+    let backtostring = newvalue.toString();
+    let removetask = backtostring.split("÷");
+    let finalvalues = [];
+    finalvalues = removetask.map((item) => Number(item));
+    let n1 = finalvalues[0];
+    let n2 = finalvalues[1];
+    let s = n1 / n2;
+    if(s == parseFloat) {
+       s.toFixed(2);
+    }
+    document.querySelector('#showresult').value = s;
+    document.querySelector('#showinc').style.fontSize= 'large';
+    document.querySelector('#showinc').style.color= 'gray';
+   };
    cleaninput() {
     document.querySelector('#showinc').value='';
     document.querySelector('#showresult').value='';
@@ -35,14 +93,3 @@ class calculator {
 };
 };
 var Calculator = new calculator;
-/*cleaninput() {
-    document.querySelector('#showinc').value='';
-    document.querySelector('#showresult').value='';
-    document.querySelector('#showinc').focus();
-    document.querySelector('#showinc').style.color='white';
-    document.querySelector('#showinc').style.fontSize='xx-large';
-};*/
-/*function removemsg() {
-   document.querySelector('#msg').style.display='none';
-   document.querySelector('#calculatorbox').style.display='block';
-};*/
