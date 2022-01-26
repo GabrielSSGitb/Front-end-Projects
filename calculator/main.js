@@ -87,7 +87,6 @@ class calculator {
    cleaninput() {
     document.querySelector('#showinc').value='';
     document.querySelector('#showresult').value='';
-    document.querySelector('#showinc').focus();
     document.querySelector('#showinc').style.color='white';
     document.querySelector('#showinc').style.fontSize='xx-large';
 };
