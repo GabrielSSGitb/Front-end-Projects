@@ -25,7 +25,7 @@ class calculator {
           }
      })
    };
-   addup(newvalue) {
+   addup(newvalue, showresult) {
       let backtostring = newvalue.toString();
       let removetask = backtostring.split("+");
       let finalvalues = [];
@@ -33,12 +33,9 @@ class calculator {
       let n1 = finalvalues[0];
       let n2 = finalvalues[1];
       let s = n1 + n2;
-      if(s == parseFloat) {
-         s.toFixed(2)
-      }
-      document.querySelector('#showresult').value = s;
-      document.querySelector('#showinc').style.fontSize= 'large';
-      document.querySelector('#showinc').style.color= 'gray';
+     document.querySelector('#showresult').value= s;
+     document.querySelector('#showinc').style.color="gray";
+     document.querySelector('#showinc').style.fontSize="large";
    };
    subtraction(newvalue) {
       let backtostring = newvalue.toString();
