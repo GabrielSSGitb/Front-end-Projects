@@ -1,8 +1,22 @@
 class calculator {
    load() {
       document.querySelector('#showinc').focus();
-   };
-   insert(num) {
+     window.addEventListener('resize', this.screensize);
+   }; 
+  screensize() {
+     var screenwidth = window.innerWidth;
+     if(screenwidth == 375) {
+      document.querySelector("#formobile").innerHTML= 'Calculator';
+      document.querySelector('#title').style.display= 'none';
+      window.document.body.style.background= 'black';
+     }else if(screenwidth > 375) {
+      document.querySelector("#formobile").innerHTML= '';
+      document.querySelector('#title').style.display= 'block';
+      window.document.body.style.background= ' black linear-gradient(to top, purple, blue) center center no-repeat fixed';
+      window.document.body.style.backgroundSize= 'cover';
+   }
+  };
+   insert(num)  {
      var number = document.querySelector('#showinc').value;
      document.querySelector('#showinc').value= number + num;
    };
