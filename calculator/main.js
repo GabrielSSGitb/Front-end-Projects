@@ -7,6 +7,10 @@ class calculator {
      document.querySelector('#showinc').value= number + num;
    };
    calculate() {
+      /*
+      .array = I used to find the symbol:(+,-,/,X);
+      .newvalue = to use split() twice and remove the symbol to calculate.
+      */
      let nums = document.querySelector('#showinc').value;
      let newvalue = [nums]; 
      let array = nums.split("");
@@ -30,12 +34,10 @@ class calculator {
       let removetask = backtostring.split("+");
       let finalvalues = [];
       finalvalues = removetask.map((item) => Number(item));
-      let n1 = finalvalues[0];
-      let n2 = finalvalues[1];
-      let s = n1 + n2;
-     document.querySelector('#showresult').value= s;
-     document.querySelector('#showinc').style.color="gray";
-     document.querySelector('#showinc').style.fontSize="large";
+      var n1 = finalvalues[0];
+      var n2 = finalvalues[1];
+      var s = n1 + n2;
+      return this.verify(s)
    };
    subtraction(newvalue) {
       let backtostring = newvalue.toString();
@@ -43,13 +45,8 @@ class calculator {
       let finalvalues = removetask.map((item) => Number(item));
       let n1 = finalvalues[0];
       let n2 = finalvalues[1];
-      let s = n1 - n2;
-      if(s == parseFloat) {
-         s.toFixed(2);
-      }
-      document.querySelector('#showresult').value = s;
-      document.querySelector('#showinc').style.fontSize= 'large';
-      document.querySelector('#showinc').style.color= 'gray';
+      let s = Math.abs(n1 - n2);
+      return this.verify(s)
    };
    multiply(newvalue) {
       let backtostring = newvalue.toString();
@@ -59,12 +56,7 @@ class calculator {
       let n1 = finalvalues[0];
       let n2 = finalvalues[1];
       let s = n1 * n2;
-      if(s == parseFloat) {
-         s.toFixed(2);
-      }
-      document.querySelector('#showresult').value = s;
-      document.querySelector('#showinc').style.fontSize= 'large';
-      document.querySelector('#showinc').style.color= 'gray';
+      return this.verify(s)
    };
    divide(newvalue) {
     let backtostring = newvalue.toString();
@@ -74,13 +66,25 @@ class calculator {
     let n1 = finalvalues[0];
     let n2 = finalvalues[1];
     let s = n1 / n2;
-    if(s == parseFloat) {
-       s.toFixed(2);
-    }
-    document.querySelector('#showresult').value = s;
-    document.querySelector('#showinc').style.fontSize= 'large';
-    document.querySelector('#showinc').style.color= 'gray';
+    return this.verify(s)
    };
+   verify(s) {
+      if(s >= 1000) {
+         s = s.toLocaleString();
+         document.querySelector("#showresult").value= s;
+         document.querySelector("#showinc").style.color='gray';
+         document.querySelector("#showinc").style.fontSize='large';
+      }else if(Number.isInteger(s)) {
+         document.querySelector("#showresult").value= s;
+         document.querySelector("#showinc").style.color='gray';
+         document.querySelector("#showinc").style.fontSize='large';
+      }else if(Number(s) != Number.isInteger(s)) {
+         s = s.toFixed(2);
+         document.querySelector("#showresult").value= s;
+         document.querySelector("#showinc").style.color='gray';
+         document.querySelector("#showinc").style.fontSize='large';
+      }
+   }
    cleaninput() {
     document.querySelector('#showinc').value='';
     document.querySelector('#showresult').value='';
