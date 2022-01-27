@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    background-image: linear-gradient(to bottom, black, blue); 
+    background-image: linear-gradient(to top, purple, blue); 
     background-position: center center;
     background-size: 100vh;
     background-attachment: fixed;
@@ -183,4 +183,21 @@ body {
     height: 27px;
     width: 24px;
     border-radius: 13px;
+}
+/*@media (max-width: 768px) {
+    #calculatorbox {
+        margin: auto;
+        margin-top: 5px;
+    }
+}*/
+@media (max-width: 320px) {
+    #calculatorbox {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    body {
+        background-color: black;
+    }
 }
