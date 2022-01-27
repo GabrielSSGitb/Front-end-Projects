@@ -8,23 +8,25 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
     <script src="main.js"></script>
+    <link rel="shortcut icon" href="calculator.ico" type="image/x-icon">
 </head>
-<body onload="Calculator.load()">
+<body onload="Calculator.load()" id="gradient">
+    <h2 id="formobile"></h2>
    <div id="calculatorbox">
         <h3 id="title">Calculator</h3>
         <input type="text" name="showinc" id="showinc">
         <input type="text" id="showresult">
-        <div class="numbers" onclick="Calculator.insert('7')">7</div>
-        <div class="numbers" onclick="Calculator.insert('8')">8</div>
-        <div class="numbers" onclick="Calculator.insert('9')">9</div> <br>
+        <div class="numbers"  onclick="Calculator.insert('7')">7</div>
+        <div class="numbers"  onclick="Calculator.insert('8')">8</div>
+        <div class="numbers"  onclick="Calculator.insert('9')">9</div> <br>
 
-       <div class="numbers"onclick="Calculator.insert('4')">4</div>
-       <div class="numbers" onclick="Calculator.insert('5')">5</div>
-       <div class="numbers" onclick="Calculator.insert('6')">6</div> <br>
+       <div class="numbers" onclick="Calculator.insert('4')">4</div>
+       <div class="numbers"  onclick="Calculator.insert('5')">5</div>
+       <div class="numbers"  onclick="Calculator.insert('6')">6</div> <br>
 
-       <div class="numbers" onclick="Calculator.insert('1')">1</div>
-       <div class="numbers" onclick="Calculator.insert('2')">2</div>
-       <div class="numbers" onclick="Calculator.insert('3')">3</div>
+       <div class="numbers"  onclick="Calculator.insert('1')">1</div>
+       <div class="numbers"  onclick="Calculator.insert('2')">2</div>
+       <div class="numbers"  onclick="Calculator.insert('3')">3</div>
        <div id="zero" onclick="Calculator.insert('0')">0</div>
         
         <div class="boxes" id="clear" onclick="Calculator.cleaninput()"><span>C</span></div> 

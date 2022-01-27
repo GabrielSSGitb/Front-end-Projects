@@ -1,11 +1,17 @@
 @charset "utf-8";
-body {
+body#gradient {
     background-image: linear-gradient(to top, purple, blue); 
     background-position: center center;
     background-size: 100vh;
     background-attachment: fixed;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+#formobile {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    font-weight: none;
 }
 #calculatorbox  {
     margin: auto;
@@ -78,8 +84,24 @@ body {
     border-radius: 10px;
     display: inline-block;
 }
+.numbers2 {
+    position: relative;
+    top: 80px;
+    left: 20px;
+    margin: auto;
+    margin-top: 7px;
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-block;
+}
 .numbers:hover {
-    background-color: rgb(0, 96, 134);
+    background-color: blue;
 }
 .numbers:active {
     background-color: rgba(255, 255, 255, 0.657);
@@ -183,21 +205,4 @@ body {
     height: 27px;
     width: 24px;
     border-radius: 13px;
-}
-/*@media (max-width: 768px) {
-    #calculatorbox {
-        margin: auto;
-        margin-top: 5px;
-    }
-}*/
-@media (max-width: 320px) {
-    #calculatorbox {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    body {
-        background-color: black;
-    }
 }
