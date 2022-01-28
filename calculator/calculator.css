@@ -208,5 +208,5 @@ body#gradient {
 }
 @media (max-width: 375px) {
   .numbers:hover {
-     background-color= 'none'
+     background-color= 'gray';
 }
