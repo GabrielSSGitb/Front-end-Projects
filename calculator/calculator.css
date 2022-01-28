@@ -206,7 +206,7 @@ body#gradient {
     width: 24px;
     border-radius: 13px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .numbers:hover {
      background-color= 'gray';
 }
