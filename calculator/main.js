@@ -5,11 +5,24 @@ class calculator {
    }; 
   screensize() {
      var screenwidth = window.innerWidth;
-     if(screenwidth == 375) {
+     if(screenwidth <= 375) {
       document.querySelector("#formobile").innerHTML= 'Calculator';
       document.querySelector('#title').style.display= 'none';
       window.document.body.style.background= 'black';
-     }else if(screenwidth > 375) {
+     }else if(screenwidth <= 767) {
+       let numshover = document.querySelectorAll(".numbers");
+       let boxeshover = document.querySelectorAll(".boxes");
+       for(let i = 0; i < numshover.length; i++) {
+         numshover[i].classList.remove("numbers");
+         numshover[i].classList.add("numbers2");
+       }
+       for(let i = 0; i < boxeshover.length; i++) {
+          boxeshover[i].classList.remove("boxes");
+          boxeshover[i].classList.add("boxes2");
+          console.log(boxeshover)
+       }
+      console.log(numshover);
+     }else if(screenwidth >= 768) {
       document.querySelector("#formobile").innerHTML= '';
       document.querySelector('#title').style.display= 'block';
       window.document.body.style.background= ' black linear-gradient(to top, purple, blue) center center no-repeat fixed';

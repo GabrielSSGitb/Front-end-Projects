@@ -61,12 +61,26 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
+.boxes2 {
+    margin-top: 60px;
+    background-color: rgb(88, 88, 88);
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
 .boxes:hover {
     background-color: rgb(0, 96, 134);
 }
 .boxes:active {
     background-color: rgba(255, 255, 255, 0.657);
     color: black;
+}
+.boxes2:active {
+    background-color: blue;
 }
 .numbers {
     position: relative;
@@ -106,6 +120,9 @@ body {
 .numbers:active {
     background-color: rgba(255, 255, 255, 0.657);
     color: black;
+}
+.numbers2:active {
+    background-color: blue;
 }
 #equal {
     position: relative;
@@ -205,13 +222,4 @@ body {
     height: 27px;
     width: 24px;
     border-radius: 13px;
-}
-
-@media (max-width: 768px) {
-    .numbers:hover {
-        background-color: aqua;
-    }
-    .numbers:active {
-        background-color: blue;
-    }
 }
