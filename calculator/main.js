@@ -20,7 +20,7 @@ class calculator {
        for(let i = 0; i < boxeshover.length; i++) {
           boxeshover[i].classList.remove("boxes");
           boxeshover[i].classList.add("boxes2");
-          console.log(boxeshover)
+          
        }
       console.log(numshover);
      }else if(screenwidth >= 768) {
@@ -28,6 +28,16 @@ class calculator {
       document.querySelector('#title').style.display= 'block';
       window.document.body.style.background= ' black linear-gradient(to top, purple, blue) center center no-repeat fixed';
       window.document.body.style.backgroundSize= 'cover';
+      let numshover = document.querySelectorAll(".numbers2");
+      let boxeshover = document.querySelectorAll(".boxes2");
+      for(let i = 0; i < numshover.length; i++) {
+         numshover[i].classList.remove("numbers2");
+         numshover[i].classList.add("numbers");
+      }
+      for(let i = 0; i < boxeshover.length; i++) {
+         boxeshover[i].classList.remove("boxes2");
+         boxeshover[i].classList.add("boxes");
+      }
    }
   };
    insert(num)  {
