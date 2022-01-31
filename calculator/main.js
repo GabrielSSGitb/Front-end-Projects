@@ -22,7 +22,6 @@ class calculator {
           boxeshover[i].classList.add("boxes2");
           
        }
-      console.log(numshover);
      }else if(screenwidth >= 768) {
       document.querySelector("#formobile").innerHTML= '';
       document.querySelector('#title').style.display= 'block';
