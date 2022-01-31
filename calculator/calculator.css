@@ -1,5 +1,5 @@
 @charset "utf-8";
-body#gradient {
+body {
     background-image: linear-gradient(to top, purple, blue); 
     background-position: center center;
     background-size: 100vh;
@@ -206,7 +206,12 @@ body#gradient {
     width: 24px;
     border-radius: 13px;
 }
-@media (max-width: 500px) {
-  .numbers:hover {
-     background-color= 'gray';
+
+@media (max-width: 768px) {
+    .numbers:hover {
+        background-color: transparent;
+    }
+    .numbers:active {
+        background-color: blue;
+    }
 }
