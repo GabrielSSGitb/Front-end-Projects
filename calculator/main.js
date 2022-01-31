@@ -10,6 +10,7 @@ class calculator {
       document.querySelector('#title').style.display= 'none';
       window.document.body.style.background= 'black';
      }else if(screenwidth <= 767) {
+        //Removing Hover effect on Smartphones and Tablets:
        let numshover = document.querySelectorAll(".numbers");
        let boxeshover = document.querySelectorAll(".boxes");
        for(let i = 0; i < numshover.length; i++) {
