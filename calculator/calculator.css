@@ -209,7 +209,7 @@ body {
 
 @media (max-width: 768px) {
     .numbers:hover {
-        background-color: inherit;
+        background-color: aqua;
     }
     .numbers:active {
         background-color: blue;
