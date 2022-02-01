@@ -26,7 +26,7 @@ class calculator {
      }else if(screenwidth >= 768) {
       document.querySelector("#formobile").innerHTML= '';
       document.querySelector('#title').style.display= 'block';
-      window.document.body.style.background= ' black linear-gradient(to top, purple, blue) center center no-repeat fixed';
+      window.document.body.style.background= ' black linear-gradient(to top, #7A0CE8, #0C55F2) center center no-repeat fixed';
       window.document.body.style.backgroundSize= 'cover';
       let numshover = document.querySelectorAll(".numbers2");
       let boxeshover = document.querySelectorAll(".boxes2");
