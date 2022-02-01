@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    background-image: linear-gradient(to top, purple, blue); 
+    background-image: linear-gradient(to top, #7A0CE8, #0C55F2); 
     background-position: center center;
     background-size: 100vh;
     background-attachment: fixed;
@@ -73,7 +73,7 @@ body {
     border-radius: 10px;
 }
 .boxes:hover {
-    background-color: rgb(0, 96, 134);
+    background-color: #3E0CF2;
 }
 .boxes:active {
     background-color: rgba(255, 255, 255, 0.657);
@@ -115,7 +115,7 @@ body {
     display: inline-block;
 }
 .numbers:hover {
-    background-color: blue;
+    background-color: #0C55F2;
 }
 .numbers:active {
     background-color: rgba(255, 255, 255, 0.657);
@@ -139,7 +139,7 @@ body {
     left: 28px;
 }
 #equal:hover {
-    background-color: rgb(44, 44, 133);
+    background-color: #7A0CE8;
     padding: 21px;
 }
 #equal:active {
@@ -210,7 +210,7 @@ body {
     border-radius: 8px;
 }
 #zero:hover {
-    background-color: rgb(0, 96, 134);
+    background-color: #000BDB;
 }
 #doc {
     font-size: large;
@@ -222,4 +222,7 @@ body {
     height: 27px;
     width: 24px;
     border-radius: 13px;
+}
+#doc:hover {
+    background-color: #0C55F2;
 }
