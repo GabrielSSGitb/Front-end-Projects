@@ -92,7 +92,7 @@
             </ul>
         </section>
         <div class="scroll" onclick="backtotop()">&#x1F4DC;</div>
-        <div class="texts">Home</div>
+        <div class="text">Home</div>
     </section>
     <footer>
         <p>Site criado pelo <a href="https://www.instagram.com/gustavoguanabara/" target="_blank" rel="external">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com" target="_blank" rel="external">Curso em video</a></p>
@@ -100,12 +100,12 @@
     <script>
         document.addEventListener('scroll', screenheight);
         function screenheight() {
-            if(window.scrollY == 0 || window.scrollY < 2391.4287109375 || window.scrollY >= 2526.666748046875) {
+            if(window.scrollY <= 2464.761962890625 || window.scrollY >= 3412.381103515625) {
                  document.querySelector('.scroll').style.display='none';
-                 document.querySelector('.texts').style.display='none';
+                 document.querySelector('.text').style.display='none';
              }else if(window.scrollY >= 2391.4287109375) {
                  document.querySelector('.scroll').style.display='block';
-                 document.querySelector('.texts').style.display='block';
+                 document.querySelector('.text').style.display='block';
              }
         };
         function backtotop() {
