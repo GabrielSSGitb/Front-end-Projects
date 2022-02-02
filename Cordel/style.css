@@ -11,18 +11,19 @@
 }
 html, body {
     background-color: white;
-    min-height: 100vh;
+    min-width: 100vh;
 }
 ::-webkit-scrollbar {
     width: 20px;
+    height: 20px;
 }
 ::-webkit-scrollbar-track {
-    background-color: black;
-    border-radius: 30px;
+    background-image: linear-gradient(to bottom, lightblue, black);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 10px
+   /* background-color: white; */
+   background-image: linear-gradient(to top, lightskyblue, white);
+    border-radius: 30px;
 }
 header {
     text-align: center;
@@ -35,7 +36,7 @@ h1 {
     font-family: var(--fonte2);
    /* text-transform: uppercase;*/
     font-variant: small-caps;
-    font-size: 80px;
+    font-size: 4em;
     padding-top: 50px; 
     padding-bottom: 50px;
 }
@@ -63,7 +64,7 @@ section.image > ul {
     width: 500px;
 }
 section.normal, section.image ul {
-    font-size: 30px;
+    font-size: 2em;
     font-family: var(--fonte3);
     padding-left: 20px;
     padding-top: 10vh;
@@ -88,7 +89,7 @@ section.normal, section.image ul {
     cursor: pointer;
     padding: 5px;
 }
-.texts {
+.text {
     color: rgb(128, 83, 0);
     font-weight: bolder;
     font-size: 18px;
@@ -97,7 +98,7 @@ section.normal, section.image ul {
     right: 28px;
     bottom: 15px;
 }
-.texts:hover {
+.text:hover {
     cursor: pointer;
 }
 footer {
@@ -109,15 +110,15 @@ footer p {
     color: gray;
     text-align: center;
 }
-@media (max-width: 768px) {
-    div.text {
+@media (max-width: 689px) {
+   section.normal  ul {
+        font-size: 20px;
+    }
+    section.image ul {
         font-size: 20px;
     }
 }
 @media (max-width: 577px) {
-    header h1 {
-        font-size: 50px;
-    }
     footer {
         font-size: 13px;
     }
