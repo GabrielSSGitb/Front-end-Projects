@@ -27,18 +27,18 @@ html, body {
 }
 header {
     text-align: center;
-    color: white;
     background-color: black;
-    padding: 40px;
+    padding: 40px; 
 }
 /*O font-variant coloca as inicias maiores no uppercase, o text-transform não.*/
 h1 {
     font-family: var(--fonte2);
+    color: white;
    /* text-transform: uppercase;*/
     font-variant: small-caps;
-    font-size: 4em;
     padding-top: 50px; 
     padding-bottom: 50px;
+    font-size: 10vh;
 }
 header p {
     color: gray;
@@ -49,7 +49,6 @@ header a, footer a {
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
-    font-weight: bolder;
 }
 section.normal {
     font-weight: bolder;
@@ -57,7 +56,6 @@ section.normal {
 }
 section.image {
     color: white;
-    font-weight: bolder;
 }
 section.image > ul {
     background-color: rgba(0, 0, 0, 0.123);
@@ -110,15 +108,21 @@ footer p {
     color: gray;
     text-align: center;
 }
-@media (max-width: 689px) {
-   section.normal  ul {
-        font-size: 20px;
-    }
-    section.image ul {
-        font-size: 20px;
-    }
-}
 @media (max-width: 577px) {
+    header {
+        padding: 100px;
+    }
+    header h1 {
+        font-size: 30px;
+        position: absolute;
+        top: 3px;
+        left: 120px;
+    }
+    header p {
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
     footer {
         font-size: 13px;
     }
