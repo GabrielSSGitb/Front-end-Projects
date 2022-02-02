@@ -7,6 +7,22 @@
 }
 * {
     margin: 0;
+    padding: 0;
+}
+html, body {
+    background-color: white;
+    min-height: 100vh;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px
 }
 header {
     text-align: center;
@@ -14,75 +30,94 @@ header {
     background-color: black;
     padding: 40px;
 }
+/*O font-variant coloca as inicias maiores no uppercase, o text-transform não.*/
 h1 {
     font-family: var(--fonte2);
-    font-size: 50px;
+   /* text-transform: uppercase;*/
+    font-variant: small-caps;
+    font-size: 80px;
+    padding-top: 50px; 
+    padding-bottom: 50px;
 }
 header p {
     color: gray;
 }
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
     font-weight: bolder;
 }
-.text {
-    font-family: var(--fonte3);
+section.normal {
     font-weight: bolder;
-    font-size: 30px;
-    line-height: 2em;
-    margin-bottom: 50px;
+    color: black;
 }
-
-#img1{
-   background-image: url('imagens/background001.jpg');
-   background-position:  right center;
-   background-attachment: fixed;
-   height: 500px;
-}
-#img1 div.text {
+section.image {
     color: white;
-    position: relative;
-    top: 20px;
-    left: 10px;
+    font-weight: bolder;
+}
+section.image > ul {
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 500px;
+}
+section.normal, section.image ul {
+    font-size: 30px;
+    font-family: var(--fonte3);
+    padding-left: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+#img1 {
+    background: gray url('imagens/background001.jpg') center center fixed;
+    background-size: cover;
 }
 #img2 {
-    background-image: url('/Cordel/imagens/background002.jpg');
-    background-position: right center;
-    background-attachment: fixed;
-    height: 500px;
+    background: gray url('imagens/background002.jpg') center center fixed;
+    background-size: cover;
 }
-#img2 div.text {
-    color: white;
-    
+.scroll {
+    font-size: 80px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.scroll:hover{
+    cursor: pointer;
+    padding: 5px;
+}
+.texts {
+    color: rgb(128, 83, 0);
+    font-weight: bolder;
+    font-size: 18px;
+    font-variant: small-caps;
+    position: fixed;
+    right: 28px;
+    bottom: 15px;
+}
+.texts:hover {
+    cursor: pointer;
 }
 footer {
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     font-family: var(--fonte1);
 }
 footer p {
     color: gray;
     text-align: center;
 }
-footer a {
-    color: white;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-    font-weight: bolder;
-}
 @media (max-width: 768px) {
     div.text {
         font-size: 20px;
     }
 }
-@media (max-width: 502px) {
-    
+@media (max-width: 577px) {
+    header h1 {
+        font-size: 50px;
+    }
     footer {
         font-size: 13px;
     }
