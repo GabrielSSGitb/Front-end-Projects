@@ -59,7 +59,7 @@ header > p {
 nav {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
 }
 nav > a {
     transition-duration: .5s;
