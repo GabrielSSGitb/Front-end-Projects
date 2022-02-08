@@ -92,12 +92,13 @@ section.image > ul {
 }
 .text {
     color: rgb(128, 83, 0);
+    font-family: var(--fonte1);
     font-weight: bolder;
     font-size: 18px;
     font-variant: small-caps;
     position: fixed;
-    right: 28px;
-    bottom: 15px;
+    right: 25px;
+    bottom: -5px;
 }
 .text:hover {
     cursor: pointer;
