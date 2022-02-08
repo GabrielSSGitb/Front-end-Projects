@@ -112,6 +112,9 @@ footer p {
     text-align: center;
 }
 @media (max-width: 577px) {
+    ul {
+        font-size: 4vh;
+    }
      footer {
         font-size: 13px;
     };
