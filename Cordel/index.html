@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-Cordel</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="shortcut icon" href="Cordelfav.ico" type="image/x-icon">
 </head>
-<body onload="screenheight()">
+<body onload="scrollandscreen.load()">
     <header>
         <h1>Cordel Moderno</h1>
         <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="external">Milton Duarte</a></p>
@@ -91,29 +92,11 @@
                 Deixe que Deus interprete.  
             </ul>
         </section>
-        <div class="scroll" onclick="backtotop()">&#x1F4DC;</div>
+        <div class="scroll">&#x1F4DC;</div>
         <div class="text">Home</div>
     </section>
     <footer>
         <p>Site criado pelo <a href="https://www.instagram.com/gustavoguanabara/" target="_blank" rel="external">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com" target="_blank" rel="external">Curso em video</a></p>
     </footer>
-    <script>
-        document.addEventListener('scroll', screenheight);
-        function screenheight() {
-            if(window.scrollY <= 2464.761962890625 || window.scrollY >= 3412.381103515625) {
-                 document.querySelector('.scroll').style.display='none';
-                 document.querySelector('.text').style.display='none';
-             }else if(window.scrollY >= 2391.4287109375) {
-                 document.querySelector('.scroll').style.display='block';
-                 document.querySelector('.text').style.display='block';
-             }
-        };
-        function backtotop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-        };
-    </script>
 </body>
 </html>
