@@ -11,7 +11,7 @@
 }
 html, body {
     background-color: white;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 ::-webkit-scrollbar {
     width: 20px;
@@ -31,14 +31,13 @@ header {
     padding: 40px; 
 }
 /*O font-variant coloca as inicias maiores no uppercase, o text-transform não.*/
-h1 {
+header h1 {
     font-family: var(--fonte2);
     color: white;
    /* text-transform: uppercase;*/
     font-variant: small-caps;
     padding-top: 50px; 
-    padding-bottom: 50px;
-    font-size: 10vh;
+    font-size: 10vw;
 }
 header p {
     color: gray;
@@ -49,10 +48,21 @@ header a, footer a {
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
+    font-weight: bolder;
+}
+section {
+    font-size: 5vh;
+    font-family: var(--fonte2);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
 }
 section.normal {
     font-weight: bolder;
     color: black;
+}
+section.normal > ul {
+    padding-left: 30px;
 }
 section.image {
     color: white;
@@ -60,14 +70,7 @@ section.image {
 section.image > ul {
     background-color: rgba(0, 0, 0, 0.123);
     width: 500px;
-}
-section.normal, section.image ul {
-    font-size: 2em;
-    font-family: var(--fonte3);
-    padding-left: 20px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
+    padding-left: 30px;
 }
 #img1 {
     background: gray url('imagens/background001.jpg') center center fixed;
@@ -109,21 +112,7 @@ footer p {
     text-align: center;
 }
 @media (max-width: 577px) {
-    header {
-        padding: 100px;
-    }
-    header h1 {
-        font-size: 30px;
-        position: absolute;
-        top: 3px;
-        left: 120px;
-    }
-    header p {
-        position: absolute;
-        top: 100px;
-        left: 150px;
-    }
-    footer {
+     footer {
         font-size: 13px;
-    }
-}
+    };
+}; 
