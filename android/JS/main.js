@@ -13,6 +13,6 @@ function inicio() {
    window.scroll({
        top: 0,
        right: 0,
-       
+       behavior: 'smooth'
    })
 };
