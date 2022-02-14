@@ -51,10 +51,10 @@ header a:hover, footer a:hover {
     font-weight: bolder;
 }
 section {
-    font-size: 5vh;
+    font-size: 8vh;
     font-family: var(--fonte2);
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 15vh;
     line-height: 2em;
 }
 section.normal {
@@ -66,18 +66,21 @@ section.normal > ul {
 }
 section.image {
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    /*O inset aplica para dentro. */
 }
 section.image > ul {
-    background-color: rgba(0, 0, 0, 0.123);
+    background-color: rgba(0, 0, 0, 0.411);
     width: 500px;
     padding-left: 30px;
+    text-shadow: 1px 1px 0px black;
 }
 #img1 {
-    background: gray url('imagens/background001.jpg') center center fixed;
+    background: gray url('imagens/background001.jpg') right center fixed;
     background-size: cover;
 }
 #img2 {
-    background: gray url('imagens/background002.jpg') center center fixed;
+    background: gray url('imagens/background002.jpg') right center fixed;
     background-size: cover;
 }
 .scroll {
@@ -114,7 +117,7 @@ footer p {
 }
 @media (max-width: 577px) {
     ul {
-        font-size: 4vh;
+        font-size: 5vh;
     }
      footer {
         font-size: 13px;
