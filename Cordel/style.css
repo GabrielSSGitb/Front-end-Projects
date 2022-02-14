@@ -117,7 +117,7 @@ footer p {
 }
 @media (max-width: 577px) {
     ul {
-        font-size: 2vh;
+        font-size: 5vh;
     }
      footer {
         font-size: 13px;
