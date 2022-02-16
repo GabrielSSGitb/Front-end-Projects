@@ -51,7 +51,8 @@ header a:hover, footer a:hover {
     font-weight: bolder;
 }
 section {
-    font-size: 8vh;
+    font-size: 60px;
+    width: fit-content;
     font-family: var(--fonte2);
     padding-top: 10vh;
     padding-bottom: 15vh;
@@ -117,7 +118,8 @@ footer p {
 }
 @media (max-width: 577px) {
     ul {
-        font-size: 2vh;
+        font-size: 20px;
+        line-height: 50px;
     }
      footer {
         font-size: 13px;
