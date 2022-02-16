@@ -118,8 +118,12 @@ footer p {
 }
 @media (max-width: 577px) {
     ul {
+<<<<<<< HEAD
         font-size: 20px;
         line-height: 50px;
+=======
+        font-size: 5vh;
+>>>>>>> 699cf3899e98cce3e227548e73ec9d0ceadebea3
     }
      footer {
         font-size: 13px;
