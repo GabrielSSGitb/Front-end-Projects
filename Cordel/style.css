@@ -120,6 +120,9 @@ footer p {
         font-size: 20px;
         line-height: 40px;
     }
+    #img1, #img2 {
+        background-position: center center;
+    }
      footer {
         font-size: 13px;
     };
