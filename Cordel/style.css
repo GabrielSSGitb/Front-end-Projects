@@ -51,8 +51,7 @@ header a:hover, footer a:hover {
     font-weight: bolder;
 }
 section {
-    font-size: 60px;
-    width: fit-content;
+    font-size: 50px;
     font-family: var(--fonte2);
     padding-top: 10vh;
     padding-bottom: 15vh;
@@ -117,13 +116,9 @@ footer p {
     text-align: center;
 }
 @media (max-width: 577px) {
-    ul {
-<<<<<<< HEAD
+    section ul {
         font-size: 20px;
-        line-height: 50px;
-=======
-        font-size: 5vh;
->>>>>>> 699cf3899e98cce3e227548e73ec9d0ceadebea3
+        line-height: 40px;
     }
      footer {
         font-size: 13px;
