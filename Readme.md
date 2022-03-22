@@ -1,7 +1,6 @@
-# Nesse repositorio estão as minhas ideias e projetos front-end. 😁
+# In this repository are my Front-end projects and ideas! 😁
 
-
-Esse repositório foi criado  no meio do ano de 2021, mas fiz umas confusões na hora de aprender o github pages, e tive que criá-lo denovo.
+This repository was create in the middle of 2021, but i made some mistakes when i was learning Github Pages, so I had to re-create it.
 
 <a href= "https://gabrielssgitb.github.io/Front-end-Projects/android/index.html">&#x1F517;Meu projeto android hospedado!</a> <br>
 <a href= "https://gabrielssgitb.github.io/Front-end-Projects/Todolist/index.html">&#x1F517;To do list</a> <br>
