@@ -66,7 +66,7 @@ class calculator {
           }
      })
    };
-   addup(newvalue, showresult) {
+   addup(newvalue) {
       let backtostring = newvalue.toString();
       let removetask = backtostring.split("+");
       let finalvalues = [];
